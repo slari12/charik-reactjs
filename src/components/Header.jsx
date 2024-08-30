@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo-horiz-charik-1.webp";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import { Home, Pricing, About, Resources, EmailFinder } from "../pages";
+import {
+  Home,
+  Pricing,
+  About,
+  Resources,
+  EmailFinder,
+  Insights,
+} from "../pages";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -55,7 +62,7 @@ function Header() {
                         <Link to="/email-finder">Email Finder</Link>
                       </li>
                       <li className="py-3">
-                        <Link to="/resources">Company Search</Link>
+                        <Link to="/email-finder">Company Search</Link>
                       </li>
                     </ul>
                   )}
@@ -82,7 +89,7 @@ function Header() {
                       onMouseEnter={handleMouseEnter2}
                     >
                       <li className="py-3">
-                        <Link to="/">Insights</Link>
+                        <Link to="/insights">Insights</Link>
                       </li>
                       <li className="py-3">
                         <Link
@@ -150,7 +157,8 @@ function Header() {
                             className="mb-[10px]"
                             onClick={() => setIsNavOpen(false)}
                           >
-                            <Link to="/pricing">Company Search</Link> <br />
+                            <Link to="/email-finder">Company Search</Link>{" "}
+                            <br />
                           </li>
                         </ul>
                         <p
@@ -171,7 +179,7 @@ function Header() {
                         <p className="mb-[10px]">Resources</p>
                         <ul className="ml-6">
                           <li className="mb-[10px]">
-                            <Link to="/pricing">Insights</Link> <br />
+                            <Link to="/insights">Insights</Link> <br />
                           </li>
                           <li className="mb-[10px]">
                             <Link
@@ -207,6 +215,7 @@ function Header() {
             <Route path="/about" element={<About />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/email-finder" element={<EmailFinder />} />
+            <Route path="/insights" element={<Insights />} />
           </Routes>
         </main>
       </BrowserRouter>
