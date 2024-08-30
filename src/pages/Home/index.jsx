@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <Discover />
-      <Curve />
+      {/* <Curve /> */}
     </>
   );
 }
