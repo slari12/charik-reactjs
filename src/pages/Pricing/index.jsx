@@ -4,6 +4,7 @@ import Discover from "../Home/Discover";
 import Curve from "../../components/Curve";
 import Testimonials from "./components/Testimonials";
 import TitleClients from "./components/TitleClients";
+import Faq from "./components/Faq";
 
 export default function Pricing() {
   return (
@@ -13,6 +14,7 @@ export default function Pricing() {
       <Curve />
       <Testimonials />
       <TitleClients />
+      <Faq />
     </>
   );
 }
