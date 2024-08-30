@@ -78,8 +78,8 @@ export default function TeamPrice() {
         type="button"
         class="text-white lg:text-[18px] focus:ring-4 lg:mt-[20px] mt-0 focus:outline-none lg:py-[20px] gradient_border font-medium rounded-[12px] text-sm px-5 py-2.5  w-full text-center"
       >
-        <p className="lg:mb-[6px] mb-0">Start free trial (14 days)</p>
-        <p>No Credit Card</p>
+        <p className="lg:mb-[6px] mb-0">Book a demo</p>
+        <p>with Jimmy</p>
       </button>
     </div>
   );
