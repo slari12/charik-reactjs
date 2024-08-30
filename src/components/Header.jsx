@@ -103,11 +103,39 @@ function Header() {
                 </div>
                 <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
                   <div class="float-right min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl block">
-                    <Link to="/">Charik</Link>
-                    <br />
-                    <Link to="/pricing">Pricing</Link> <br />
-                    <Link to="/about">About</Link> <br />
-                    <Link to="/resources">Resources</Link>
+                    <p className="mt-[30px] mb-[10px]">Charik</p>
+                    <ul className="ml-6">
+                      <li className="mb-[10px]">
+                        <Link to="/">Software</Link> <br />
+                      </li>
+                      <li className="mb-[10px]">
+                        <Link to="/pricing">Email Finder</Link> <br />
+                      </li>
+                      <li className="mb-[10px]">
+                        <Link to="/pricing">Company Search</Link> <br />
+                      </li>
+                    </ul>
+                    <p className="mb-[10px]">
+                      <Link to="/pricing">Pricing</Link>
+                    </p>
+                    <p className="mb-[10px]">
+                      <Link to="/about" className="mb-[10px]">
+                        About
+                      </Link>
+                    </p>
+
+                    <p className="mb-[10px]">Resources</p>
+                    <ul className="ml-6">
+                      <li className="mb-[10px]">
+                        <Link to="/pricing">Insights</Link> <br />
+                      </li>
+                      <li className="mb-[10px]">
+                        <Link to="/pricing">Knowledge Base</Link> <br />
+                      </li>
+                      <li className="mb-[10px]">
+                        <Link to="/pricing">SDF Tester</Link> <br />
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </label>
