@@ -31,8 +31,8 @@ const LogoSlider = () => {
 
   return (
     <div>
-      <div className="lg:pt-[60px] mx-auto px-4 py-8">
-        <Slider {...settings} className="customer-logos">
+      <div className="lg:pt-[60px] mx-auto px-4 pt-8">
+        <Slider {...settings} className="customer-logos items-center">
           <div className="slide">
             <img
               src="https://www.charik.fr/hubfs/logo-ouest%20croissance.svg"

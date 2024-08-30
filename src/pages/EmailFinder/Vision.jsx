@@ -1,5 +1,6 @@
 import React from "react";
 import LogoSlider from "./components/LogoSlider";
+import Orange from "./components/Orange";
 
 export default function Vision() {
   return (

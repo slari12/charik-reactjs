@@ -857,3 +857,7 @@ html {
 .slick-arrow.slick-hidden {
   @apply hidden;
 }
+.orange_btn {
+  border-radius: 20px;
+  border: 2px solid white;
+}
