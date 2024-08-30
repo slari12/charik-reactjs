@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo-horiz-charik-1.webp";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import { Home, Pricing, About, Resources } from "../pages";
+import { Home, Pricing, About, Resources, EmailFinder } from "../pages";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -30,7 +30,7 @@ function Header() {
             <div className="flex justify-between items-center header">
               <img src={Logo} alt="" className="logo" />
 
-              <div className="links lg:flex">
+              <div className="links lg:flex items-center">
                 <div
                   class="dropdown dropdown-hover relative"
                   onMouseEnter={handleMouseEnter}
@@ -44,7 +44,7 @@ function Header() {
                   {isDropdownVisible && (
                     <ul
                       tabindex="0"
-                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-3"
+                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave}
                       onMouseEnter={handleMouseEnter}
                     >
@@ -52,7 +52,7 @@ function Header() {
                         <Link to="/">Software</Link>
                       </li>
                       <li className="py-3">
-                        <Link to="/about">Email Finder</Link>
+                        <Link to="/email-finder">Email Finder</Link>
                       </li>
                       <li className="py-3">
                         <Link to="/resources">Company Search</Link>
@@ -77,22 +77,30 @@ function Header() {
                   {isDropdownVisible2 && (
                     <ul
                       tabindex="0"
-                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-3"
+                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave2}
                       onMouseEnter={handleMouseEnter2}
                     >
                       <li className="py-3">
-                        <Link to="/">Software</Link>
+                        <Link to="/">Insights</Link>
                       </li>
                       <li className="py-3">
-                        <Link to="/about">Email Finder</Link>
+                        <Link
+                          to="https://www.charik.fr/en/help"
+                          target="_blank"
+                        >
+                          Knowledge Base
+                        </Link>
                       </li>
                       <li className="py-3">
-                        <Link to="/resources">Company Search</Link>
+                        <Link to="https://charik.app/verify" target="_blank">
+                          SDF Tester
+                        </Link>
                       </li>
                     </ul>
                   )}
                 </div>
+                <div className="nav_btn default_btn">Demo</div>
               </div>
               <label
                 class="relative z-40 cursor-pointer  mobile-nav"
@@ -132,17 +140,29 @@ function Header() {
                             <Link to="/">Software</Link>
                             <br />
                           </li>
-                          <li className="mb-[10px]">
-                            <Link to="/pricing">Email Finder</Link> <br />
+                          <li
+                            className="mb-[10px]"
+                            onClick={() => setIsNavOpen(false)}
+                          >
+                            <Link to="/email-finder">Email Finder</Link> <br />
                           </li>
-                          <li className="mb-[10px]">
+                          <li
+                            className="mb-[10px]"
+                            onClick={() => setIsNavOpen(false)}
+                          >
                             <Link to="/pricing">Company Search</Link> <br />
                           </li>
                         </ul>
-                        <p className="mb-[10px]">
+                        <p
+                          className="mb-[10px]"
+                          onClick={() => setIsNavOpen(false)}
+                        >
                           <Link to="/pricing">Pricing</Link>
                         </p>
-                        <p className="mb-[10px]">
+                        <p
+                          className="mb-[10px]"
+                          onClick={() => setIsNavOpen(false)}
+                        >
                           <Link to="/about" className="mb-[10px]">
                             About
                           </Link>
@@ -154,10 +174,22 @@ function Header() {
                             <Link to="/pricing">Insights</Link> <br />
                           </li>
                           <li className="mb-[10px]">
-                            <Link to="/pricing">Knowledge Base</Link> <br />
+                            <Link
+                              to="/https://www.charik.fr/en/help"
+                              target="_blank"
+                            >
+                              Knowledge Base
+                            </Link>
+                            <br />
                           </li>
                           <li className="mb-[10px]">
-                            <Link to="/pricing">SDF Tester</Link> <br />
+                            <Link
+                              to="https://charik.app/verify"
+                              target="_blank"
+                            >
+                              SDF Tester
+                            </Link>
+                            <br />
                           </li>
                         </ul>
                       </div>
@@ -174,6 +206,7 @@ function Header() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/about" element={<About />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/email-finder" element={<EmailFinder />} />
           </Routes>
         </main>
       </BrowserRouter>
