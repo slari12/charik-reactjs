@@ -145,6 +145,14 @@ html {
   .card_avatar {
     gap: 120px;
   }
+  .drop_item {
+    display: none;
+  }
+  .menu_drop:hover {
+    .drop_item {
+      visibility: visible;
+    }
+  }
 }
 
 /* H5 */

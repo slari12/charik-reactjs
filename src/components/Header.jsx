@@ -1,9 +1,24 @@
-import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
 import Logo from "../assets/logo-horiz-charik-1.webp";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { Home, Pricing, About, Resources } from "../pages";
 
-const Header = () => {
+function Header() {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [isDropdownVisible2, setDropdownVisible2] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+  const handleMouseEnter2 = () => {
+    setDropdownVisible2(true);
+  };
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+  const handleMouseLeave2 = () => {
+    setDropdownVisible2(false);
+  };
   return (
     <>
       <BrowserRouter>
@@ -12,12 +27,71 @@ const Header = () => {
             <div className="flex justify-between items-center header">
               <img src={Logo} alt="" className="logo" />
 
-              <div className="links">
-                <Link to="/">Charik</Link>
+              <div className="links lg:flex">
+                <div
+                  class="dropdown dropdown-hover relative"
+                  onMouseEnter={handleMouseEnter}
+                >
+                  <div
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <a href="#">Charik</a>
+                  </div>
+                  {isDropdownVisible && (
+                    <ul
+                      tabindex="0"
+                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-3"
+                      onMouseLeave={handleMouseLeave}
+                      onMouseEnter={handleMouseEnter}
+                    >
+                      <li className="py-3">
+                        <Link to="/">Software</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link to="/about">Email Finder</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link to="/resources">Company Search</Link>
+                      </li>
+                    </ul>
+                  )}
+                </div>
+
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/about">About</Link>
-                <Link to="/resources">Resources</Link>
+                <div
+                  class="dropdown dropdown-hover relative"
+                  onMouseEnter={handleMouseEnter2}
+                >
+                  <div
+                    onMouseEnter={handleMouseEnter2}
+                    onMouseLeave={handleMouseLeave2}
+                  >
+                    <a href="#">Resources</a>
+                  </div>
+
+                  {isDropdownVisible2 && (
+                    <ul
+                      tabindex="0"
+                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-3"
+                      onMouseLeave={handleMouseLeave2}
+                      onMouseEnter={handleMouseEnter2}
+                    >
+                      <li className="py-3">
+                        <Link to="/">Software</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link to="/about">Email Finder</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link to="/resources">Company Search</Link>
+                      </li>
+                    </ul>
+                  )}
+                </div>
               </div>
+
               <label
                 class="relative z-40 cursor-pointer px-3 py-6 mobile-nav"
                 for="mobile-menu"
@@ -51,6 +125,6 @@ const Header = () => {
       </BrowserRouter>
     </>
   );
-};
+}
 
 export default Header;
