@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Search Companies",
+    "content": "Discover companies based on a variety of criteria.",
+    "icon": "faMagnifyingGlassDollar"
+  },
+  {
+    "id": 2,
+    "title": "Add Companies",
+    "content": "Add companies with just one click.",
+    "icon": "faCartArrowDown"
+  },
+  {
+    "id": 3,
+    "title": "Segment your CRM",
+    "content": "Segment your HubSpot database with dedicated fields.",
+    "icon": "faDatabase"
+  },
+  {
+    "id": 4,
+    "title": "Domain Finder",
+    "content": "HubSpot requires a domain name. We'll find it for you.",
+    "icon": "faInternetExplorer"
+  },
+  {
+    "id": 5,
+    "title": "Search Contacts",
+    "content": "Generate a contact list directly from the company profile.",
+    "icon": "faMagnifyingGlassPlus"
+  },
+  {
+    "id": 6,
+    "title": "Add Contacts",
+    "content": "Toss your keyboards aside, add a contact with just one click.",
+    "icon": "faAddressCard"
+  },
+  {
+    "id": 7,
+    "title": "Email Finder",
+    "content": "Uncover the professional email addresses of your contacts.",
+    "icon": "faEnvelopesBulk"
+  },
+  {
+    "id": 8,
+    "title": "Phone Finder",
+    "content": "Link your favorite data provider: Kaspr, Apollo, ...",
+    "icon": "faGhost"
+  },
+  {
+    "id": 9,
+    "title": "Linkedin contact",
+    "content": "Add a contact from LinkedIn with just one click.",
+    "icon": "faLinkedinIn"
+  },
+  {
+    "id": 10,
+    "title": "No Duplicates",
+    "content": "Finally, an app that doesn't add duplicates.",
+    "icon": "faCopy"
+  },
+  {
+    "id": 11,
+    "title": "Gender Reveal",
+    "content": "Feeling your greetings lack spark? Allow us to assist.",
+    "icon": "faCircle"
+  },
+  {
+    "id": 12,
+    "title": "Get Financial data",
+    "content": "Corporate financial information, directly within HubSpot.",
+    "icon": "faScaleBalanced"
+  },
+  {
+    "id": 13,
+    "title": "Balance Sheets",
+    "content": "Access and annotate the latest 3 financial statements of companies (France only)",
+    "icon": "faBook"
+  },
+  {
+    "id": 14,
+    "title": "Finances Filters",
+    "content": "Refine your search by focusing on revenue or profit growth (French companies)",
+    "icon": "faBook"
+  }
+]
