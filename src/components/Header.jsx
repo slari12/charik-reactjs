@@ -10,8 +10,6 @@ function Header() {
   const [isDropdownVisible2, setDropdownVisible2] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  // const closeNav = () => {};
-
   const handleMouseEnter = () => {
     setDropdownVisible(true);
   };

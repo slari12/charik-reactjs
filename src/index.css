@@ -50,6 +50,12 @@ html {
 .gradient_icon {
   background: linear-gradient(111.02deg, #f5693f, #f53f71);
 }
+.gradient_border {
+  background: transparent;
+
+  border: 2.5px solid #f65954;
+  color: #f65954;
+}
 .icon {
   height: 4rem;
   width: 4rem;
