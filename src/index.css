@@ -106,6 +106,12 @@ html {
   border-radius: 20px;
   padding: 20px;
 }
+.card_gradient {
+  background: linear-gradient(111.02deg, #f5693f, #f53f71);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
 .footer {
   border-top: 1px solid;
   padding-top: 40px;
@@ -839,4 +845,15 @@ html {
   .testim .cont div p {
     line-height: 25px;
   }
+}
+.slick-slide {
+  @apply mx-4;
+}
+
+.slick-slide img {
+  @apply w-full;
+}
+
+.slick-arrow.slick-hidden {
+  @apply hidden;
 }

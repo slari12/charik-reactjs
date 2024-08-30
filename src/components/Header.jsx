@@ -175,7 +175,7 @@ function Header() {
                           </li>
                           <li className="mb-[10px]">
                             <Link
-                              to="/https://www.charik.fr/en/help"
+                              to="https://www.charik.fr/en/help"
                               target="_blank"
                             >
                               Knowledge Base
