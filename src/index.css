@@ -119,6 +119,9 @@ html {
   padding-bottom: 96px;
   border-color: #e3e6ec;
 }
+.nav_btn a:hover {
+  text-decoration: none;
+}
 
 /* PC */
 @media (min-width: 768px) {

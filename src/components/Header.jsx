@@ -107,7 +107,12 @@ function Header() {
                     </ul>
                   )}
                 </div>
-                <div className="nav_btn default_btn">Demo</div>
+                <Link
+                  target="_blank"
+                  to="https://www.charik.fr/meetings/jimmy5/demo?hsLang=en&uuid=a77fb010-6ef0-4f57-b735-727ae7d597c4"
+                >
+                  <button className="nav_btn default_btn">Demo</button>
+                </Link>
               </div>
               <label
                 class="relative z-40 cursor-pointer  mobile-nav"
