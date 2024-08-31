@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function MonthlySingle() {
+function MonthlySingle({ isToggled }) {
   return (
     <div class="w-full lg:max-w-[557px] lg:px-[36px] lg:pt-[70px] pt-8 pb-4 px-5 bg-white border border-gray-200 rounded-[24px] shadow sm:p-8">
       <div class="flex items-baseline text-gray-900 dark:text-white lg:mb-[28.8px] mb-0">
         <span class="text-3xl lg:text-[72px] font-semibold">$</span>
         <span class="text-5xl lg:text-[72px] font-extrabold tracking-tight">
-          49
+          {isToggled ? "59" : "79"}
         </span>
         <span class="ms-1 text-[13px] font-normal text-gray-500 lg:text-[16px]">
           / month / user *
@@ -84,3 +84,4 @@ export default function MonthlySingle() {
     </div>
   );
 }
+export default MonthlySingle;
