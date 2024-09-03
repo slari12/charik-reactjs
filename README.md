@@ -2,7 +2,7 @@
 
 # Project Title
 
-A brief description of your project and what it does.
+A brief description of your project and what it does. Deployed version: https://charik-frontend-interview-claridel.vercel.app/
 
 ## Table of Contents
 
