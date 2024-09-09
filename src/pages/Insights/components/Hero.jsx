@@ -20,7 +20,7 @@ export default function Hero() {
             />
           </div>
           <p className="text-[#6a6d77] py-[30px] lg:text-[32px] text-[18px] font-light w:full lg:max-w-[802px]">
-            <blockquote class="xlarge-text important-text">
+            <blockquote className="xlarge-text important-text">
               "Our goal is to position your sales team for success quarter after
               quarter by enabling them to focus on high-value tasks and
               supporting their mental health to ensure they thrive both

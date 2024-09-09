@@ -14,10 +14,10 @@ export default function Graph() {
         </div>
         <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
           {/* item1 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -28,17 +28,17 @@ export default function Graph() {
                 />
               </svg>
             </div>
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-[20px] border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-[20px] border border-slate-200 shadow">
               <div className="flex gap-[15px] lg:items-center">
                 <div>
-                  <div class="font-bold text-slate-900">
+                  <div className="font-bold text-slate-900">
                     HubSpot Partnership
                   </div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     August 2016
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     Jimmy (our Founder and CEO) start his journey as a HubsPot
                     Partner and rapidly evolve as one of the top 20 HubSpot
                     Partner WorldWide.
@@ -55,10 +55,10 @@ export default function Graph() {
           </div>
 
           {/* item2 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -70,15 +70,15 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-[20px] bg-white p-4  border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-[20px] bg-white p-4  border border-slate-200 shadow">
               <div className="flex lg:items-center gap-[10px]">
                 <div>
-                  <div class="font-bold text-slate-900">Charik V1.0</div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <div className="font-bold text-slate-900">Charik V1.0</div>
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     April 2023
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     A select group of customers placed their trust in us, and
                     together we collaborated to create the inaugural version of
                     our product.
@@ -96,10 +96,10 @@ export default function Graph() {
           </div>
 
           {/* item3 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -111,17 +111,17 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
               <div className="flex items-center">
                 <div>
-                  <div class="font-bold text-slate-900">
+                  <div className="font-bold text-slate-900">
                     Public Launch of Charik
                   </div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     December 2023
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     Launching our first website and introducing the release of
                     our cutting-edge sales intelligence software.
                   </div>
@@ -134,10 +134,10 @@ export default function Graph() {
           </div>
 
           {/* item4 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -149,17 +149,17 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-[20px] border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-[20px] border border-slate-200 shadow">
               <div className="flex items-center gap-[20px]">
                 <div>
-                  <div class="font-bold text-slate-900">
+                  <div className="font-bold text-slate-900">
                     Startup Alpha at WebSummit Qatar
                   </div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     February 2023
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     We are delighted to have been selected as one of the 100
                     startups invited to participate in the inaugural WebSummit
                     in Qatar.
@@ -177,10 +177,10 @@ export default function Graph() {
           </div>
 
           {/* item5 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -192,15 +192,15 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
               <div className="flex items-center gap-[20px]">
                 <div>
-                  <div class="font-bold text-slate-900">Charik V2.0</div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <div className="font-bold text-slate-900">Charik V2.0</div>
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     April 2024
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     One year post v1.0, we are proud to unveil our latest
                     Website and Software update designed to enhance the
                     utilization of sales intelligence for HubSpot Users.
@@ -218,10 +218,10 @@ export default function Graph() {
           </div>
 
           {/* item6 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -233,17 +233,17 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-[20px] bg-white p-4  border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-[20px] bg-white p-4  border border-slate-200 shadow">
               <div className="flex items-center gap-[20px]">
                 <div>
-                  <div class="font-bold text-slate-900">
+                  <div className="font-bold text-slate-900">
                     Launching the Partner Program
                   </div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     May 2024
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     Establishing a network of HubSpot experts eager to deliver
                     productivity enhancements to their clients.
                   </div>
@@ -260,10 +260,10 @@ export default function Graph() {
           </div>
 
           {/* item7 */}
-          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#f53f71] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <svg
-                class="fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="10"
@@ -275,17 +275,17 @@ export default function Graph() {
               </svg>
             </div>
 
-            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  bg-white p-4 rounded-[20px] border border-slate-200 shadow">
               <div className="flex items-center justify-between">
                 <div>
-                  <div class="font-bold text-slate-900">
+                  <div className="font-bold text-slate-900">
                     Start your Sales Intelligence Journey
                   </div>
-                  <time class="font-caveat font-medium text-[#f53f71]">
+                  <time className="font-caveat font-medium text-[#f53f71]">
                     Why not today?
                   </time>
 
-                  <div class="text-slate-500">
+                  <div className="text-slate-500">
                     Speed up the process of closing deals.
                   </div>
                 </div>

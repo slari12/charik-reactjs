@@ -39,7 +39,7 @@ function Header() {
 
               <div className="links lg:flex items-center">
                 <div
-                  class="dropdown dropdown-hover relative"
+                  className="dropdown dropdown-hover relative"
                   onMouseEnter={handleMouseEnter}
                 >
                   <div
@@ -50,7 +50,7 @@ function Header() {
                   </div>
                   {isDropdownVisible && (
                     <ul
-                      tabindex="0"
+                      tabIndex="0"
                       className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave}
                       onMouseEnter={handleMouseEnter}
@@ -71,7 +71,7 @@ function Header() {
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/about">About</Link>
                 <div
-                  class="dropdown dropdown-hover relative"
+                  className="dropdown dropdown-hover relative"
                   onMouseEnter={handleMouseEnter2}
                 >
                   <div
@@ -83,7 +83,7 @@ function Header() {
 
                   {isDropdownVisible2 && (
                     <ul
-                      tabindex="0"
+                      tabIndex="0"
                       className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave2}
                       onMouseEnter={handleMouseEnter2}
@@ -115,10 +115,14 @@ function Header() {
                 </Link>
               </div>
               <label
-                class="relative z-40 cursor-pointer  mobile-nav"
+                className="relative z-40 cursor-pointer  mobile-nav"
                 for="mobile-menu"
               >
-                <input class="peer hidden" type="checkbox" id="mobile-menu" />
+                <input
+                  className="peer hidden"
+                  type="checkbox"
+                  id="mobile-menu"
+                />
 
                 <FontAwesomeIcon
                   icon={faBars}
@@ -129,11 +133,11 @@ function Header() {
 
                 {isNavOpen && (
                   <>
-                    <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
+                    <div className="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
                       &nbsp;
                     </div>
-                    <div class="fixed top-0 left-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
-                      <div class="float-right min-h-full w-[85%] bg-white pl-8 pr-6 pt-12 shadow-2xl block">
+                    <div className="fixed top-0 left-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
+                      <div className="float-right min-h-full w-[85%] bg-white pl-8 pr-6 pt-12 shadow-2xl block">
                         <FontAwesomeIcon
                           icon={faXmark}
                           style={{
