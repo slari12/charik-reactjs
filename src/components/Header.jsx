@@ -116,7 +116,7 @@ function Header() {
               </div>
               <label
                 className="relative z-40 cursor-pointer  mobile-nav"
-                for="mobile-menu"
+                htmlFor="mobile-menu"
               >
                 <input
                   className="peer hidden"
