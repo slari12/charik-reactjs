@@ -15,7 +15,6 @@ export default function Curve() {
               <img
                 src="https://i.pravatar.cc/70?img=58"
                 alt=""
-                srcset=""
                 className="rounded-full lg:mr-[20px]"
               />
             </div>
