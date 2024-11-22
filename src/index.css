@@ -19,6 +19,7 @@ html {
   max-width: 1280px;
   position: relative;
 }
+
 .outer_header {
   box-shadow: 0 8px 16px rgba(69, 71, 76, 0.05),
     0 4px 8px rgba(34, 35, 38, 0.05);
@@ -126,7 +127,7 @@ html {
 /* PC */
 @media (min-width: 768px) {
   .logo {
-    height: 80px;
+    height: 50px;
   }
   .container {
     padding: 40px 24px;

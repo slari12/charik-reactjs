@@ -17,7 +17,7 @@ const Home = () => {
         </p>
         <button className="default_btn">Live Demo</button>
       </div>
-      <div className="hidden_h5">
+      <div className="hidden_h5 ">
         <img src={CompanyLogo} alt="" />
       </div>
     </div>

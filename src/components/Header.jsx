@@ -33,10 +33,9 @@ function Header() {
     <>
       <BrowserRouter>
         <div className="bg-white outer_header">
-          <div className="outer_header py-[18px] px-[24px]">
+          <div className="outer_header py-[10px] px-[24px]">
             <div className="flex justify-between items-center header">
               <img src={Logo} alt="" className="logo" />
-
               <div className="links lg:flex items-center">
                 <div
                   className="dropdown dropdown-hover relative"
@@ -51,7 +50,7 @@ function Header() {
                   {isDropdownVisible && (
                     <ul
                       tabIndex="0"
-                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
+                      className="bg-white shadow-md z-50 top-100 left-[-18px] w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave}
                       onMouseEnter={handleMouseEnter}
                     >
@@ -84,7 +83,7 @@ function Header() {
                   {isDropdownVisible2 && (
                     <ul
                       tabIndex="0"
-                      className="bg-white shadow-md z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
+                      className="bg-white z-50 top-100 left-[-18px] shadow-lg w-[200px] text-[#222636] rounded-md absolute py-1 pr-2 pl-[20px]"
                       onMouseLeave={handleMouseLeave2}
                       onMouseEnter={handleMouseEnter2}
                     >
